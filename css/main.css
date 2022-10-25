@@ -240,7 +240,7 @@ header {
         animation-duration: 600ms;
     }
     .home-btn1:hover {
-        background-color: var(--main-color);
+        background-color: #0a6fb2;
     }
     .home-btn2 {
         margin-top: 15px;
