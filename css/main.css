@@ -36,13 +36,17 @@ h1 {
     }
 
     a {
-        color:var(--main-color);
+        color: #6a6a6a;
         text-decoration: none;
         margin: 1rem 0;
         font-weight: 600;
         text-transform: uppercase;
-        font-size: 0.8125rem;
+        font-size: 50px;
         letter-spacing: 1px;
+        transition: 0.20s;
+    }
+    a:hover {
+        color: white;
     }
     body {
         background-color: var(--bg-color);
@@ -131,7 +135,9 @@ h1 {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-
+.home-text button {
+    margin-right: 10px;
+}
 header {
         height: 80px;
         display: -webkit-flex;
@@ -403,6 +409,18 @@ header {
 
 
 @media (max-width: 710px) {
+    footer {
+        display: none;
+}
+.home-img img {
+    width: 100px;
+    height: 100px;
+
+}
+img {
+    width: 50px;
+    height: 50px;
+}
     .wrapper nav .categorys {
         max-width: 600px;
     }
@@ -448,6 +466,10 @@ header {
 }
 
 @media (max-width: 600px) {
+    img {
+        width: 25px;
+        height: 25px;
+    }
     .wrapper {
         margin: 30px auto;
     }
