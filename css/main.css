@@ -263,7 +263,7 @@ header {
         animation-duration: 600ms;
     }
     .home-btn2:hover {
-        background-color: var(--main-color);
+        background-color: #2c3dff;
     }
     .foot-btn {
         text-align: center;
