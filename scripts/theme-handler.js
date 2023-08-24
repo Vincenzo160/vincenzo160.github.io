@@ -1,7 +1,7 @@
 var currentTheme = document.getElementsByTagName("meta")[0].content
 var savedTheme = document.cookie.slice(6)
 
-if (currentTheme === savedTheme) {
+if (currentTheme === savedTheme || savedTheme === undefined) {
     
 } else {
     setTheme(savedTheme)
