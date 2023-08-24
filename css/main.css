@@ -414,9 +414,7 @@ header {
 
 
 @media (max-width: 710px) {
-    footer {
-        display: none;
-}
+
 .home-img img {
     width: 100px;
     height: 100px;
