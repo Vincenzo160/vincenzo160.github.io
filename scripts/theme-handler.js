@@ -5,7 +5,7 @@ var defaultTheme = "sgt"
 if (!(currentTheme === savedTheme)) {
     setTheme(savedTheme)
 } else if (savedTheme === "") {
-    selectTheme(defaultTheme)
+    setTheme(defaultTheme)
 }
 
 let selectTheme = document.querySelector(".theme-selector");
