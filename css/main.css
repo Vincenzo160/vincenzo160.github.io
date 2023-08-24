@@ -68,6 +68,12 @@ h1 {
 
     }
 
+    select {
+        background-color: var(--arc-palette-subtitle, #6a6a6a);
+        text-align: center;
+        border-radius: 8px;
+        border: none;
+    }
 
 
     .reveal.active {
