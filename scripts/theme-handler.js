@@ -11,11 +11,7 @@ let selectTheme = document.querySelector(".theme-selector");
 
 selectTheme.addEventListener("change", (event) => {
     var selection = event.target.value
-    if (selection == "theme-sgt") {
-        setTheme(selection.slice(6))
-    } else if (selection == "theme-glass") {
-        setTheme(selection.slice(6))
-    }
+    setTheme(selection.slice(6))
 })
 
 function setCookie(theme) {
