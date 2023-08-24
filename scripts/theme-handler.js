@@ -1,7 +1,10 @@
 var currentTheme = document.getElementsByTagName("meta")[0].content
 var savedTheme = document.cookie.slice(6)
+var defaultTheme = "sgt"
 
-if (!(currentTheme === savedTheme || savedTheme === "")) {
+if (currentTheme === savedTheme || savedTheme === "") {
+    selectTheme(defaultTheme)
+} else {
     setTheme(savedTheme)
 }
 
@@ -17,7 +20,7 @@ function setCookie(theme) {
 }
 function setTheme(theme) {
     setCookie(theme)
-    if (theme === "sgt") {
+    if (theme === defaultTheme) {
         location.replace("/")
     } else {
         location.replace("/themes/"+theme)
