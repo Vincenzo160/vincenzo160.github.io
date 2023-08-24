@@ -2,10 +2,10 @@ var currentTheme = document.getElementsByTagName("meta")[0].content
 var savedTheme = document.cookie.slice(6)
 var defaultTheme = "sgt"
 
-if (currentTheme === savedTheme || savedTheme === "") {
-    selectTheme(defaultTheme)
-} else {
+if (!(currentTheme === savedTheme)) {
     setTheme(savedTheme)
+} else if (savedTheme === "") {
+    selectTheme(defaultTheme)
 }
 
 let selectTheme = document.querySelector(".theme-selector");
