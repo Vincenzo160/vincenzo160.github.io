@@ -16,11 +16,10 @@ function setCookie(theme) {
     document.cookie = "theme="+ theme +"; expires=Thu, 18 Dec 9999 12:00:00 UTC; path=/";
 }
 function setTheme(theme) {
+    setCookie(theme)
     if (theme === "sgt") {
-        setCookie("sgt")
         location.replace("/")
     } else {
-        setCookie(theme)
         location.replace("/themes/"+theme)
     }
 }
