@@ -46,7 +46,7 @@ h1 {
         transition: 0.20s;
     }
     a:hover {
-        color: var(--arc-palette-hover, white);
+        color: #57b0f5;
     }
     body {
         background-color: #e4ecf4;
