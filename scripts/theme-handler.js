@@ -1,11 +1,9 @@
 var currentTheme = document.getElementsByTagName("meta")[0].content
 var savedTheme = getCookie("theme")
 var savedVariation = getCookie("variation")
-console.log(savedVariation)
 
 
 if (savedTheme === "") {
-    console.log("aaaa")
     setTheme("sgt")
 } else if (!(currentTheme === savedTheme)) {
     setTheme(savedTheme)
@@ -23,7 +21,6 @@ selectTheme.addEventListener("change", (event) => {
         setVariationC(selection.slice(6).slice(-1))
         setTheme(selection.slice(6, -1))
     } else {
-        console.log("Normal")
         setVariationC("0")
         setTheme(selection.slice(6))
     }
@@ -54,7 +51,6 @@ function setCookie(theme) {
     document.cookie = "theme="+ theme +"; expires=Thu, 18 Dec 9999 12:00:00 UTC; path=/";
 }
 function setTheme(theme) {
-    console.log(theme)
     if (theme === "sgt") {
         setCookie("sgt")
         location.replace("/")
@@ -67,10 +63,8 @@ function setTheme(theme) {
 function setVariation(savedVariation,savedTheme) {
     if (!(savedVariation === "0")) {
         if (savedTheme === "sgt") {
-            console.log("defoult")
             var savedTheme = "main"
         }
-        console.log("/css/"+savedTheme+savedVariation+".css")
         document.getElementById("stylesheet").setAttribute("href", "/css/"+savedTheme+savedVariation+".css");
     }
 }
