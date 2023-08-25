@@ -2,7 +2,7 @@
     <title>Gorzog</title>
 	<meta name="theme" content="sgt"> <!-- Must be first meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
+    <link id="stylesheet" rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <!-- home -->
@@ -31,9 +31,12 @@
 		<a href="https://twitter.com/Gorzog_"><i class="fa fa-twitter"></i></a>
 		<div>
 			<select name="themes" class="theme-selector">
-				<optgroup label="Website Themes">
-					<option value="default" autofocus>Select Theme</option>
-					<option value="theme-sgt" disabled>SGT (Current)</option>
+				<option value="default" autofocus>Select Theme</option>
+				<optgroup label="SGT (Current)">
+					<option value="theme-sgt">SGT Dark</option>
+					<option value="theme-sgt1">SGT Ligth</option>
+				</optgroup>
+				<optgroup label="Other">
 					<option value="theme-glass">Glass [Desktop Only]</option>
 				</optgroup>
 			</select>
