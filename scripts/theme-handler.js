@@ -17,7 +17,7 @@ let selectTheme = document.querySelector(".theme-selector");
 
 selectTheme.addEventListener("change", (event) => {
     var selection = event.target.value
-    if (parseInt(selection.slice(6).slice(-1)) === 1) {
+    if (parseInt(selection.slice(6).slice(-1)) >= 1) {
         setVariationC(selection.slice(6).slice(-1))
         setTheme(selection.slice(6, -1))
     } else {
