@@ -261,7 +261,7 @@ header {
         padding: 8px 50px;
         border-radius: 50px;
         border: none;
-        background: #5865F2;
+        background: #8707e9;
         color: white;
         font-weight: bold;
         font-size: 20px;
@@ -270,7 +270,24 @@ header {
         animation-duration: 600ms;
     }
     .home-btn2:hover {
-        background-color: #2c3dff;
+        background-color: #6c06ba;
+    }
+    .home-btn3 {
+        margin-top: 15px;
+        width: auto;
+        padding: 8px 50px;
+        border-radius: 50px;
+        border: none;
+        background: rgb(0,0,255);
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .35s;
+        animation-duration: 600ms;
+    }
+    .home-btn3:hover {
+        background-color: #5865F2;
     }
     .foot-btn {
         text-align: center;
