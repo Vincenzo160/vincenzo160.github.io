@@ -290,14 +290,16 @@ header {
         margin-top: 15px;
         width: auto;
         padding: 8px 50px;
-        border-radius: 50px;
-        border: none;
-        background: rgb(0,0,255);
+        border-width: 5px;
+        border-style: solid;
+        border-color: var(--main-color);
+        background: var(--bg-color);
         color: white;
         font-weight: bold;
         font-size: 20px;
         cursor: pointer;
         transition: .35s;
+        animation-name: enterbtn1;
         animation-duration: 600ms;
     }
     .home-btn3:hover {
