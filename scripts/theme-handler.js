@@ -5,6 +5,11 @@ var savedVariation = getCookie("variation")
 
 if (savedTheme === "") {
     setTheme("sgt")
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme("sgt")
+    } else {
+        setVariationC("1")
+    }
 } else if (!(currentTheme === savedTheme)) {
     setTheme(savedTheme)
 }
