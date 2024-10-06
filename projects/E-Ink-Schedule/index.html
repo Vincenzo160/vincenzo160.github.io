@@ -167,6 +167,9 @@ scdate = 09
 fastBoot = True
 utcOffset = 2
 refreshTime = 3600
+ledOffEnable = False
+ledOffStart = 21
+ledOffEnd = 7
 
 # Network config
 ssid = 'YOUR_SSID'
@@ -195,6 +198,9 @@ BUSY_PIN        = 13</code></pre>
       <code class="strings">fastBoot</code>: Use a less verbose init process (Faster)<br>
       <code class="strings">utcOffset</code>: UTC offset in hours (ex. 2 = UTC+2)<br>
       <code class="strings">refreshTime</code>: How many seconds to wait before issuing a refresh<br>
+      <code class="strings">ledOffEnable</code>: Enable LED scheduled control<br>
+      <code class="strings">ledOffStart</code>: Time after which to turn off the onboard LED (Requires <code class="strings">ledOffEnable</code> to be True)<br>
+      <code class="strings">ledOffEnd</code>: Time after which to turn on the onboard LED (Requires <code class="strings">ledOffEnable</code> to be True)<br>
       <strong>Network config:</strong><br>
       <code class="strings">ssid</code>: The SSID of your Wi-Fi network [REQUIRED]<br>
       <code class="strings">password</code>: The password of your Wi-Fi network [REQUIRED]<br>
