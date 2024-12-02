@@ -163,6 +163,8 @@
       <li>Install needed dependecies (datetime) using the MicroPico Tab ( <img src="/assets/e-ink/pico-tab.png" alt="MicroPico tab" style="max-width: 30px; height: auto; border-radius: 5px;"> ) (You may need to connect to a Wi-Fi Network using the same tab)</li>
       <li>Open main.py on the filesystem of the Rasberry Pi Pico and modify the configuration on the top of the file, it should look like this:<br>
       <pre><code># System config
+fetchConfigFromRemote = False
+
 scdate = 09
 fastBoot = True
 utcOffset = 2
@@ -194,6 +196,7 @@ CS_PIN          = 9
 BUSY_PIN        = 13</code></pre>
       change the values to match your configuration</li>
       <strong>System config:</strong><br>
+      <code class="strings">fetchConfigFromRemote</code>: Fetch config from remote server, see <a href="https://github.com/Vincenzo160/E-Ink-Schedule/blob/main/example/schedule.json">example json</a><br>
       <code class="strings">scdate</code>: Time after which to show the schedule for the next day<br>
       <code class="strings">fastBoot</code>: Use a less verbose init process (Faster)<br>
       <code class="strings">utcOffset</code>: UTC offset in hours (ex. 2 = UTC+2)<br>
