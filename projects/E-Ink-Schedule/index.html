@@ -135,33 +135,33 @@
     </ul>
     <h2 id="hardware-used">Hardware required</h2>
     <ul>
-    <li>Rasberry Pi Pico WH</li>
+    <li>Raspberry Pi Pico WH</li>
     <li><a href="https://www.waveshare.com/wiki/Pico-ePaper-2.9-B">Waveshare Pico e-Paper 2.9 (B)</a></li>
     </ul>
     <h2 id="how-to-assemble">How to assemble</h2>
     <p class="note" style="color: red;">NOTE: This project was made using a Waveshare Pico e-Paper 2.9 (B) [V4], other models may have different pinouts which could send voltages to the wrong pins and therefore damage the display, before starting please check on the board the model (Pico e-Paper 2.9) and that the sticker has V4 written on it and that is in the B/W/R box</p>
     <h3>Using the socket</h3>
-    <p>If you are using a Rasberry Pi WH (With GPIO headers):</p>
+    <p>If you are using a Raspberry Pi WH (With GPIO headers):</p>
     <ol>
-    <li>Connect the rasberry pi to the socket of the display</li>
+    <li>Connect the raspberry pi to the socket of the display</li>
     </ol>
     <h2 id="how-to-install">How to install the software</h2>
     <h3 id="using-micropico-vs-code-extension">Using the MicroPico extension for VS Code</h3>
     <ol>
       <li>Download the latest version of main.py from the <a href="https://github.com/Vincenzo160/E-Ink-Schedule/releases">Releases page</a></li>
       <li>Create a new directory for the project</li>
-      <li>Flash the Micropython firmware on the Rasberry Pi Pico <a href="https://www.raspberrypi.com/documentation/microcontrollers/micropython.html">(Official guide)</a></li>
+      <li>Flash the Micropython firmware on the Raspberry Pi Pico <a href="https://www.raspberrypi.com/documentation/microcontrollers/micropython.html">(Official guide)</a></li>
       <li>Download and Install <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
       <li>Install the <a href="https://marketplace.visualstudio.com/items?itemName=paulober.pico-w-go">MicroPico extension</a> on VS Code</li>
       <li>Open the directory previously created containing main.py on VS Code using File > Open Folder</li>
       <li>On VS Code run "MicroPico: Configure project" using the command palette (⇧+⌘+P/⇧+ctrl+P)</li>
-      <li>Connect the Rasberry Pi Pico to your computer using a USB-A to USB-Micro-B data cable</li>
+      <li>Connect the Raspberry Pi Pico to your computer using a USB-A to USB-Micro-B data cable</li>
       <li>Check the status of the connection using the status bar (<img src="/assets/e-ink/pico-status.png" alt="Status Bar" style="max-width: 150px; height: auto; border-radius: 5px;">), if it shows disconnected click that same indicator to retry the connection</li>
-      <li>Once the connection has been enstablished click on <img src="/assets/e-ink/pico-toggle.png" alt="Toggle Pico-W-FS" style="max-width: 150px; height: auto; border-radius: 5px;"> on the status bar to show the file system of the Rasberry Pi inside of the Explorer tab of VS Code</li>
-      <li>Transfer <a href="https://github.com/Vincenzo160/E-Ink-Schedule/blob/main/src/main.py">main.py</a> to the Rasberry Pi Pico</li>
-      <img src="/assets/e-ink/pico-fs.png" alt="Rasberry Pi Pico's File system" style="max-width: 290px; height: auto; border-radius: 5px;">
+      <li>Once the connection has been enstablished click on <img src="/assets/e-ink/pico-toggle.png" alt="Toggle Pico-W-FS" style="max-width: 150px; height: auto; border-radius: 5px;"> on the status bar to show the file system of the Raspberry Pi inside of the Explorer tab of VS Code</li>
+      <li>Transfer <a href="https://github.com/Vincenzo160/E-Ink-Schedule/blob/main/src/main.py">main.py</a> to the Raspberry Pi Pico</li>
+      <img src="/assets/e-ink/pico-fs.png" alt="Raspberry Pi Pico's File system" style="max-width: 290px; height: auto; border-radius: 5px;">
       <li>Install needed dependecies (datetime) using the MicroPico Tab ( <img src="/assets/e-ink/pico-tab.png" alt="MicroPico tab" style="max-width: 30px; height: auto; border-radius: 5px;"> ) (You may need to connect to a Wi-Fi Network using the same tab)</li>
-      <li>Open main.py on the filesystem of the Rasberry Pi Pico and modify the configuration on the top of the file, it should look like this:<br>
+      <li>Open main.py on the filesystem of the Raspberry Pi Pico and modify the configuration on the top of the file, it should look like this:<br>
       <pre><code># System config
 fetchConfigFromRemote = False
 
@@ -215,7 +215,7 @@ BUSY_PIN        = 13</code></pre>
       Display pins mapping, don&#39;t change if using socket<br></li>
     </ol>
     <h2 id="schedule-format">Schedule Format</h2>
-    <p>The Rasberry Pi Pico will retrieve your schedule from the defined web server, the screen can display up to 7 subjects, if more are defined &quot;...&quot; will be displayed instead, if the day dosen&#39;t contain any subject a &quot;free&quot; screen will be displayed.
+    <p>The Raspberry Pi Pico will retrieve your schedule from the defined web server, the screen can display up to 7 subjects, if more are defined &quot;...&quot; will be displayed instead, if the day dosen&#39;t contain any subject a &quot;free&quot; screen will be displayed.
     Example Schedule:</p>
     <pre><code>{
       <span class="hljs-attr">"weekly_schedule"</span>: {
