@@ -126,7 +126,7 @@
   <img src="/assets/e-ink/display.jpeg" alt="E-Ink Display" style="max-width: 250px; height: auto; border-radius: 15px;" class="main-image">
   <h3>Display your schedule on a e-ink display using a Raspberry Pi Pico WH with Micropython</h3>
   <div class="article">
-    <p class="note">Note: This project includes the display driver for the Waveshare Pico e-Paper 2.9 (B) display provided by Waveshare</p>
+    <p class="note">Note: This project includes the display driver for the Waveshare Pico e-Paper 2.9 (B) display provided by Waveshare.</p>
     <h2 id="capabilities">Capabilities</h2>
     <ul>
     <li>Display up to 7 tasks at a time</li>
@@ -139,33 +139,33 @@
     <li><a href="https://www.waveshare.com/wiki/Pico-ePaper-2.9-B">Waveshare Pico e-Paper 2.9 (B)</a></li>
     </ul>
     <h2 id="how-to-assemble">How to assemble</h2>
-    <p class="note" style="color: red;">NOTE: This project was made using a Waveshare Pico e-Paper 2.9 (B) [V4], other models may have different pinouts which could send voltages to the wrong pins and therefore damage the display, before starting please check on the board the model (Pico e-Paper 2.9) and that the sticker has V4 written on it and that is in the B/W/R box</p>
+    <p class="note" style="color: red;">NOTE: This project was made using a Waveshare Pico e-Paper 2.9 (B) [V4], other models may have different pinouts which could send voltages to the wrong pins and therefore damage the display, before starting please check on the board the model (Pico e-Paper 2.9) and that the sticker has V4 written on it and that is in the B/W/R box.</p>
     <h3>Using the socket</h3>
     <p>If you are using a Raspberry Pi WH (With GPIO headers):</p>
     <ol>
-    <li>Connect the raspberry pi to the socket of the display</li>
+    <li>Connect the raspberry pi to the socket of the display.</li>
     </ol>
     <h2 id="how-to-install">How to install the software</h2>
     <h3 id="using-micropico-vs-code-extension">Using the MicroPico extension for VS Code</h3>
     <ol>
-      <li>Download the latest version of main.py from the <a href="https://github.com/Vincenzo160/E-Ink-Schedule/releases">Releases page</a></li>
-      <li>Create a new directory for the project</li>
-      <li>Flash the Micropython firmware on the Raspberry Pi Pico <a href="https://www.raspberrypi.com/documentation/microcontrollers/micropython.html">(Official guide)</a></li>
-      <li>Download and Install <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-      <li>Install the <a href="https://marketplace.visualstudio.com/items?itemName=paulober.pico-w-go">MicroPico extension</a> on VS Code</li>
-      <li>Open the directory previously created containing main.py on VS Code using File > Open Folder</li>
-      <li>On VS Code run "MicroPico: Configure project" using the command palette (⇧+⌘+P/⇧+ctrl+P)</li>
-      <li>Connect the Raspberry Pi Pico to your computer using a USB-A to USB-Micro-B data cable</li>
-      <li>Check the status of the connection using the status bar (<img src="/assets/e-ink/pico-status.png" alt="Status Bar" style="max-width: 150px; height: auto; border-radius: 5px;">), if it shows disconnected click that same indicator to retry the connection</li>
-      <li>Once the connection has been enstablished click on <img src="/assets/e-ink/pico-toggle.png" alt="Toggle Pico-W-FS" style="max-width: 150px; height: auto; border-radius: 5px;"> on the status bar to show the file system of the Raspberry Pi inside of the Explorer tab of VS Code</li>
-      <li>Transfer <a href="https://github.com/Vincenzo160/E-Ink-Schedule/blob/main/src/main.py">main.py</a> to the Raspberry Pi Pico</li>
+      <li>Download the latest version of main.py from the <a href="https://github.com/Vincenzo160/E-Ink-Schedule/releases">Releases page</a>.</li>
+      <li>Create a new directory for the project.</li>
+      <li>Flash the Micropython firmware on the Raspberry Pi Pico <a href="https://www.raspberrypi.com/documentation/microcontrollers/micropython.html">(Official guide)</a>.</li>
+      <li>Download and Install <a href="https://code.visualstudio.com/">Visual Studio Code</a>.</li>
+      <li>Install the <a href="https://marketplace.visualstudio.com/items?itemName=paulober.pico-w-go">MicroPico extension</a> on VS Code.</li>
+      <li>Open the directory previously created containing main.py on VS Code using File > Open Folder.</li>
+      <li>On VS Code run "MicroPico: Configure project" using the command palette (⇧+⌘+P/⇧+ctrl+P).</li>
+      <li>Connect the Raspberry Pi Pico to your computer using a USB-A to USB-Micro-B data cable.</li>
+      <li>Check the status of the connection using the status bar (<img src="/assets/e-ink/pico-status.png" alt="Status Bar" style="max-width: 150px; height: auto; border-radius: 5px;">), if it shows disconnected click that same indicator to retry the connection.</li>
+      <li>Once the connection has been enstablished click on <img src="/assets/e-ink/pico-toggle.png" alt="Toggle Pico-W-FS" style="max-width: 150px; height: auto; border-radius: 5px;"> on the status bar to show the file system of the Raspberry Pi inside of the Explorer tab of VS Code.</li>
+      <li>Transfer <a href="https://github.com/Vincenzo160/E-Ink-Schedule/blob/main/src/main.py">main.py</a> to the Raspberry Pi Pico.</li>
       <img src="/assets/e-ink/pico-fs.png" alt="Raspberry Pi Pico's File system" style="max-width: 290px; height: auto; border-radius: 5px;">
-      <li>Install needed dependecies (datetime) using the MicroPico Tab ( <img src="/assets/e-ink/pico-tab.png" alt="MicroPico tab" style="max-width: 30px; height: auto; border-radius: 5px;"> ) (You may need to connect to a Wi-Fi Network using the same tab)</li>
+      <li>Install needed dependecies (datetime) using the MicroPico Tab ( <img src="/assets/e-ink/pico-tab.png" alt="MicroPico tab" style="max-width: 30px; height: auto; border-radius: 5px;"> ) (You may need to connect to a Wi-Fi Network using the same tab).</li>
       <li>Open main.py on the filesystem of the Raspberry Pi Pico and modify the configuration on the top of the file, it should look like this:<br>
       <pre><code># System config
 fetchConfigFromRemote = False
 
-scdate = 09
+scdate = 9
 fastBoot = True
 utcOffset = 2
 refreshTime = 3600
@@ -176,13 +176,14 @@ ledOffEnd = 7
 # Network config
 ssid = 'YOUR_SSID'
 password = 'YOUR_PASSWORD'
-ntptime.host = "1.europe.pool.ntp.org"
-scheduleServer = "YOUR_WEB_SERVER"
+ntptime.host = "pool.ntp.org"
+scheduleServer = "https://YOUR_WEB_SERVER/schedule.json"
 
 # Strings
 str_today = "Today"
 str_tomorrow = "Tomorrow"
 str_months = ["Jan", "Feb", ...]
+str_free = "Free as the wind"
 
 # Display driver config
 EPD_WIDTH       = 128
@@ -194,25 +195,25 @@ RST_PIN         = 12
 DC_PIN          = 8
 CS_PIN          = 9
 BUSY_PIN        = 13</code></pre>
-      change the values to match your configuration</li>
+      change the values to match your configuration.</li>
       <strong>System config:</strong><br>
-      <code class="strings">fetchConfigFromRemote</code>: Fetch config from remote server, see <a href="https://github.com/Vincenzo160/E-Ink-Schedule/blob/main/example/schedule.json">example json</a><br>
-      <code class="strings">scdate</code>: Time after which to show the schedule for the next day<br>
-      <code class="strings">fastBoot</code>: Use a less verbose init process (Faster)<br>
-      <code class="strings">utcOffset</code>: UTC offset in hours (ex. 2 = UTC+2)<br>
-      <code class="strings">refreshTime</code>: How many seconds to wait before issuing a refresh<br>
-      <code class="strings">ledOffEnable</code>: Enable LED scheduled control<br>
-      <code class="strings">ledOffStart</code>: Time after which to turn off the onboard LED (Requires <code class="strings">ledOffEnable</code> to be True)<br>
-      <code class="strings">ledOffEnd</code>: Time after which to turn on the onboard LED (Requires <code class="strings">ledOffEnable</code> to be True)<br>
+      <code class="strings">fetchConfigFromRemote</code>: Fetch config from remote server, see <a href="https://github.com/Vincenzo160/E-Ink-Schedule/blob/main/example/schedule.json">example json</a>.<br>
+      <code class="strings">scdate</code>: Time after which to show the schedule for the next day.<br>
+      <code class="strings">fastBoot</code>: Use a less verbose init process. (Faster)<br>
+      <code class="strings">utcOffset</code>: UTC offset in hours. (ex. +2 = UTC+2)<br>
+      <code class="strings">refreshTime</code>: How many seconds to wait before issuing a refresh.<br>
+      <code class="strings">ledOffEnable</code>: Enable LED scheduled control.<br>
+      <code class="strings">ledOffStart</code>: Time after which to turn off the onboard LED. (Requires <code class="strings">ledOffEnable</code> to be True)<br>
+      <code class="strings">ledOffEnd</code>: Time after which to turn on the onboard LED. (Requires <code class="strings">ledOffEnable</code> to be True)<br>
       <strong>Network config:</strong><br>
-      <code class="strings">ssid</code>: The SSID of your Wi-Fi network [REQUIRED]<br>
-      <code class="strings">password</code>: The password of your Wi-Fi network [REQUIRED]<br>
-      <code class="strings">ntptime.host</code>: NTP Server to use for time retrieval<br>
-      <code class="strings">scheduleServer</code>: URL for the schedule.json hosted on a web server, you can find an example for formatting <a href="https://github.com/Vincenzo160/E-Ink-Schedule/blob/main/example/schedule.json">here</a>, for more info see <a href="https://github.com/Vincenzo160/E-Ink-Schedule/blob/main/README.md#schedule-format">schedule format</a> [REQUIRED]<br>
+      <code class="strings">ssid</code>: The SSID of your Wi-Fi network. [REQUIRED]<br>
+      <code class="strings">password</code>: The password of your Wi-Fi network. [REQUIRED]<br>
+      <code class="strings">ntptime.host</code>: NTP Server to use for time retrieval.<br>
+      <code class="strings">scheduleServer</code>: URL for the schedule.json hosted on a web server, you can find an example for formatting <a href="https://github.com/Vincenzo160/E-Ink-Schedule/blob/main/example/schedule.json">here</a>, for more info see <a href="https://github.com/Vincenzo160/E-Ink-Schedule/blob/main/README.md#schedule-format">schedule format</a>. [REQUIRED]<br>
       <strong>Strings:</strong><br>
-      These can be used for localization, try to use the same character count otherwise change manually the offsets<br>
+      These can be used for localization, try to use the same character count otherwise change manually the offsets.<br>
       <strong>Display driver config:</strong><br>
-      Display pins mapping, don&#39;t change if using socket<br></li>
+      Display pins mapping, don&#39;t change if using socket.<br></li>
     </ol>
     <h2 id="schedule-format">Schedule Format</h2>
     <p>The Raspberry Pi Pico will retrieve your schedule from the defined web server, the screen can display up to 7 subjects, if more are defined &quot;...&quot; will be displayed instead, if the day dosen&#39;t contain any subject a &quot;free&quot; screen will be displayed.
@@ -247,7 +248,7 @@ BUSY_PIN        = 13</code></pre>
         ]
       }
     }
-    </code></pre><p>For a full example see <a href="https://github.com/Vincenzo160/E-Ink-Schedule/blob/main/example/schedule.json">example/schedule.json</a></p>
+    </code></pre><p>For a full example see <a href="https://github.com/Vincenzo160/E-Ink-Schedule/blob/main/example/schedule.json">example/schedule.json</a>.</p>
   
 
   </div>
