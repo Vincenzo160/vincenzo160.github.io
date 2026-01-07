@@ -37,7 +37,7 @@ document.getElementById("qr").children[2].addEventListener("click", (event) => {
     .then(response => response.json())
     .then(data => {
       // console.log('Success:', data);
-      if (data.url.match(/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/i)) {
+      if (data.url.match(/^https?:/)) {
         window.location.href = data.url;
         
       } else if (!(data.url === "invalid")) {
